@@ -10,7 +10,7 @@
     "esModuleInterop": true,
     "strict": true,
     "module": "commonjs",
-    "moduleResolution": "node",
+    "moduleResolution": "node"
   },
   "include": [
     "src"
