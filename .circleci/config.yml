@@ -10,7 +10,7 @@ jobs:
           keys:
             - v1-dependencies-{{ checksum "yarn.lock" }}
             - v1-dependencies-
-      - run: npm ci
+      - run: yarn install --frozen-lockfile
       - save_cache:
           paths:
             - node_modules
