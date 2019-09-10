@@ -1,0 +1,44 @@
+{
+  "name": "reactive-properties",
+  "version": "0.1.0",
+  "description": "Reactive property system.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha -r ts-node/register -r ./test/register.ts \"test/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json \"{src,test}/**/*.ts\"",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "property",
+    "reactive",
+    "rx",
+    "rxjs",
+    "state",
+    "mutable",
+    "callback",
+    "callbacks"
+  ],
+  "files": [
+    "package.json",
+    "dist",
+    "Unlicense",
+    "README.md"
+  ],
+  "author": "Dmytro Maretskyi <maretskii@gmail.com>",
+  "license": "Unlicense",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.7.4",
+    "@types/sinon-chai": "^3.2.3",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "sinon": "^7.4.2",
+    "sinon-chai": "^3.3.0",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  }
+}
