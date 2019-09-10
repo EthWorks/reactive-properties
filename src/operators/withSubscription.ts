@@ -2,7 +2,7 @@ import { withEffect } from './withEffect'
 import { Callback } from '../Property'
 
 interface Subscribable {
-  subscribe: (cb: Callback) => Callback;
+  subscribe: (cb: Callback) => Callback
 }
 
 export function withSubscription<T> (
