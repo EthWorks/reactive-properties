@@ -1,5 +1,4 @@
-import { State } from '../src'
-import { combine } from '../src/combine'
+import { combine, State } from '../src'
 import { expect } from 'chai'
 import sinon from 'sinon'
 
