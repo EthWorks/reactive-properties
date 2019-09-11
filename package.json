@@ -1,6 +1,6 @@
 {
   "name": "reactive-properties",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Reactive property system.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
