@@ -53,4 +53,13 @@ describe('combine', () => {
       expect(res.get()).to.eq(21)
     })
   })
+
+  it('works on union types', () => {
+    const propA = new State<number | string>(5)
+    const propB = new State({ a: true })
+
+    const res = combine([propA, propB], (a, b) => b.a ? a : b)
+
+    expect(res.get()).to.eq(5)
+  })
 })
