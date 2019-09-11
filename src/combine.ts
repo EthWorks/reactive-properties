@@ -2,9 +2,10 @@ import { Property } from './Property'
 
 type PropertyArray<T> = { [K in keyof T]: Property<T[K]> }
 
-export function combine<T, A, B>(properties: PropertyArray<[A, B]>, map: (a: A, b: B) => T): Property<T>;
-export function combine<T, A, B, C>(properties: PropertyArray<[A, B, C]>, map: (a: A, b: B, c: C) => T): Property<T>;
-export function combine<T, A, B, C, D>(properties: PropertyArray<[A, B, C, D]>, map: (a: A, b: B, c: C, d: D) => T): Property<T>;
+export function combine<T, A, B> (properties: PropertyArray<[A, B]>, map: (a: A, b: B) => T): Property<T>
+export function combine<T, A, B, C> (properties: PropertyArray<[A, B, C]>, map: (a: A, b: B, c: C) => T): Property<T>
+// tslint:disable-next-line:max-line-length
+export function combine<T, A, B, C, D> (properties: PropertyArray<[A, B, C, D]>, map: (a: A, b: B, c: C, d: D) => T): Property<T>
 export function combine (properties: Property<any>[], map: (...args: any) => any): Property<any> {
   return new class extends Property<any> {
     get (): any {

@@ -4,5 +4,6 @@
     <inspection_tool class="BadExpressionStatementJS" enabled="true" level="WARNING" enabled_by_default="true">
       <scope name="Tests" level="INFORMATION" enabled="true" />
     </inspection_tool>
+    <inspection_tool class="TsLint" enabled="true" level="WARNING" enabled_by_default="true" />
   </profile>
 </component>
