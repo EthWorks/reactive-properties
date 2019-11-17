@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "mocha -r ts-node/register -r ./test/register.ts \"test/**/*.ts\"",
+    "test": "mocha -r ts-node/register -r ./test/register.ts \"test/**/*.test.ts\"",
     "lint": "tslint -p tsconfig.json \"{src,test}/**/*.ts\"",
     "prepublishOnly": "npm run build"
   },
