@@ -63,6 +63,24 @@ state.set(99) // "Update: 99" is printed to the console
 
 Sends update notifications to all subscribers when the new value is set.
 
+
+### `combine`
+
+Used to combine multiple properties into one.
+
+```typescript
+const a = new State(2)
+const b = new State(2)
+
+const sum = combine([a, b], (a, b) => a + b) // sum is 4
+
+b.set(5) // sum is now 7
+
+a.set(6) // sum is now 11
+```
+
+Updates every time when one of the source properties update.
+
 ### `map` operator
 
 Works similarly to `Array.map`. Creates a new property which will always have values that are obtained by mapping the original property's values with the provided function.
