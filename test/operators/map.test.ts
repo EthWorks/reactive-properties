@@ -2,7 +2,7 @@ import { Property, map } from '../../src'
 import { expect } from 'chai'
 import sinon from 'sinon'
 
-describe('Property/map', () => {
+describe('operators/map', () => {
   it('get returns mapped value', () => {
     const prop = new class extends Property<number> {
       get () {

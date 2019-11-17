@@ -3,7 +3,7 @@ import sinon from 'sinon'
 import { forEach } from '../../src/operators/forEach'
 import { expect } from 'chai'
 
-describe('Property/forEach', () => {
+describe('operators/forEach', () => {
   it('triggers initially', () => {
     const prop = new State(5)
     const cb = sinon.fake()

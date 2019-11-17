@@ -2,7 +2,7 @@ import { Property, withEffect } from '../../src'
 import { expect } from 'chai'
 import sinon from 'sinon'
 
-describe('Property/withEffect', () => {
+describe('operators/withEffect', () => {
   it('get passes value through', () => {
     const prop = new class extends Property<number> {
       get () {
