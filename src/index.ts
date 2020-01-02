@@ -1,4 +1,4 @@
-export { Property } from './Property'
+export { Property, Callback } from './Property'
 export { State } from './State'
 export { map } from './operators/map'
 export { withEffect } from './operators/withEffect'
