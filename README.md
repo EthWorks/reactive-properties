@@ -2,7 +2,7 @@
 
 [![NPM](https://img.shields.io/npm/v/reactive-properties.svg)](https://www.npmjs.com/package/reactive-properties)
 [![CircleCI](https://img.shields.io/circleci/build/github/UniversalLogin/reactive-properties/master.svg)](https://circleci.com/gh/UniversalLogin/reactive-properties/tree/master)
-[![License](https://img.shields.io/github/license/Marik-D/reactive-properties.svg)](https://github.com/Marik-D/reactive-properties/blob/master/UNLICENSE)
+[![License](https://img.shields.io/github/license/UniversalLogin/reactive-properties.svg)](https://github.com/UniversalLogin/reactive-properties/blob/master/UNLICENSE)
 
 
 Reactive property system.
