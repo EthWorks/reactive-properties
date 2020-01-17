@@ -1,4 +1,4 @@
-import { Property, Callback } from "../Property"
+import { Property, Callback } from '../Property'
 
 export function dedupBy <T> (eq: (a: T, b: T) => boolean) {
   return (source: Property<T>) => new class extends Property<T> {
@@ -9,7 +9,7 @@ export function dedupBy <T> (eq: (a: T, b: T) => boolean) {
     subscribe (cb: Callback): Callback {
       let previous = source.get()
       return source.subscribe(() => {
-        if(!eq(previous, source.get())) {
+        if (!eq(previous, source.get())) {
           previous = source.get()
           cb()
         }
