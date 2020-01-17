@@ -109,3 +109,19 @@ Calls provided callback for each value that a property has. Including the curren
 ### `waitFor` operator
 
 Converts the property to a promise that resolves when the provided predicate returns true. Promise resolves with the first value that matched the predicate.
+
+### `dedupBy` operator
+
+Stops updates when property values don't change. Example:
+
+```typescript
+const state = new State(0)
+
+state.forEach(console.log) // prints 0
+
+state.set(0) // nothing printed
+
+state.set(1) // prints 1
+
+state.set(1) // nothing printed
+```
