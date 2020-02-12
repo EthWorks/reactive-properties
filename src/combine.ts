@@ -1,4 +1,5 @@
 import { Property } from './Property'
+import { multipleCallback } from './util/multipleCallback'
 
 type PropertyArray<T> = { [K in keyof T]: Property<T[K]> }
 
@@ -14,8 +15,7 @@ export function combine (properties: Property<any>[], map: (...args: any) => any
     }
 
     subscribe (cb: () => void): () => void {
-      const subscriptions = properties.map(prop => prop.subscribe(cb))
-      return () => subscriptions.forEach(unsubscribe => unsubscribe())
+      return multipleCallback(properties.map(prop => prop.subscribe(cb)))
     }
   }
 }
