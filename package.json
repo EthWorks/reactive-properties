@@ -2,10 +2,13 @@
   "name": "reactive-properties",
   "version": "0.1.7",
   "description": "Reactive property system.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "types": "dist/esm/index.d.ts",
+  "module": "dist/esm/index.js",
   "scripts": {
-    "build": "tsc",
+    "build:cjs": "tsc --outDir dist/cjs",
+    "build:esm": "tsc --outDir dist/esm --module es6",
+    "build": "yarn build:cjs && yarn build:esm",
     "test": "mocha -r ts-node/register -r ./test/register.ts \"test/**/*.test.ts\"",
     "lint": "tslint -p tsconfig.json \"{src,test}/**/*.ts\"",
     "prepublishOnly": "npm run build"
