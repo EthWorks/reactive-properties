@@ -1,3 +1,5 @@
+import { pipe } from './pipe'
+
 export type Callback = () => void
 
 export abstract class Property<T> {
@@ -39,7 +41,7 @@ export abstract class Property<T> {
     fn6: PipeFn<U5, U6>,
   ): U6
   pipe (...fns: ((x: any) => any)[]): any {
-    return fns.reduce((arg, fn) => fn(arg), this)
+    return pipe(...fns)(this)
   }
 }
 
