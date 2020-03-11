@@ -1,6 +1,6 @@
 {
   "name": "reactive-properties",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Reactive property system.",
   "main": "dist/cjs/index.js",
   "types": "dist/esm/index.d.ts",
