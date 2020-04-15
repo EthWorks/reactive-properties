@@ -1,11 +1,16 @@
-# reactive-properties
+<div align="center">
+  <img width="250" src="https://raw.githubusercontent.com/UniLogin/reactive-properties/master/logo.png">
+  <br>
 
 [![NPM](https://img.shields.io/npm/v/reactive-properties.svg)](https://www.npmjs.com/package/reactive-properties)
-[![CircleCI](https://img.shields.io/circleci/build/github/UniversalLogin/reactive-properties/master.svg)](https://circleci.com/gh/UniversalLogin/reactive-properties/tree/master)
-[![License](https://img.shields.io/github/license/UniversalLogin/reactive-properties.svg)](https://github.com/UniversalLogin/reactive-properties/blob/master/UNLICENSE)
+[![CircleCI](https://img.shields.io/circleci/build/github/UniLogin/reactive-properties/master.svg)](https://circleci.com/gh/UniLogin/reactive-properties/tree/master)
+[![License](https://img.shields.io/github/license/UniLogin/reactive-properties.svg)](https://github.com/UniLogin/reactive-properties/blob/master/UNLICENSE)
 
+</div>
 
-Reactive property system.
+# reactive-properties
+
+A lightweight alternative for RX and Redux, that utilises react hooks and dramatically reduces the amount of boiler plate code for the typical React application.
 
 ## Installation
 ```
